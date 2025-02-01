@@ -5,6 +5,7 @@ import axios from 'axios';
 import { FaCircle } from "react-icons/fa6";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import { FcTodoList } from "react-icons/fc";
 
 function Home() {
 
@@ -36,7 +37,7 @@ function Home() {
 
     return(
         <div className="home">
-            <h2>Todo List</h2>
+            <h2 className='todoHeading'><FcTodoList className='icon'/>Todo List</h2>
             <Create />
             {
                 todos.length === 0 
