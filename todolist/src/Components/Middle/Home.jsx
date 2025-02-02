@@ -37,7 +37,7 @@ function Home() {
 
     return(
         <div className="home">
-            <h2 className='todoHeading'><FcTodoList className='icon'/>Todo List</h2>
+            <h2 className='todoHeading'><FcTodoList className='icon'/>To-Do List</h2>
             <Create />
             {
                 todos.length === 0 

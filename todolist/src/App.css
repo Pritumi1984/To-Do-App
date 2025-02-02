@@ -1,12 +1,56 @@
 body{
     background-color: #e8f0fe;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
 }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100%;
+}
+
+/* Left section with title starts*/
+
+.LeftSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  
+    padding: 20px;
+    border: 2px solid;
+}
+
+.left_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task_filters, .animation{
+    border: 2px solid;
+    padding: 5px;
+}
+
+.task_filters{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Middle section with todo list starts*/
 
 .home{
     display: flex;
+    flex: 1.5;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    padding-bottom: 25px;
+    width: 500px;
+    border: 2px solid;
 }
 
 .todoHeading{
@@ -74,4 +118,57 @@ body{
 
 .line_through{
     text-decoration: line-through;
+}
+
+/* Middle section with todo list ends*/
+
+/* Right section with completed list starts*/
+
+.RightSection {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calendar, .notes, .quote{
+    border: 2px solid;
+    padding: 5px;
+    background-color: #fff;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.notes{
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notes_input{
+    padding: 10px;
+    resize: none;
+    height: 150px;
+}
+
+.quote_text{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.quote_author{
+    font-size: 15px;
+    font-weight: bold;
 }

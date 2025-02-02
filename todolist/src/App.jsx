@@ -1,11 +1,16 @@
 import './App.css'
-import Home from './Home'
+import LeftSection from './components/Left/LeftSection';
+import Home from './Components/Middle/Home';
+import RightSection from './components/Right/RightSection';
 
 function App() {
+
   return (
-    <>
-      <Home />
-    </>
+      <div className='container'>
+          <LeftSection  />
+          <Home />
+          <RightSection />
+      </div>
   )
 }
 
